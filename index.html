@@ -924,7 +924,7 @@ to {
                 <!-- CONTACT FORM -->
                 <div class="card">
                     <div class="card-content">
-                        <form id="contact-form" name="c-form">
+                        <form method="POST" action="send.php"> <!--id="contact-form" name="c-form" -->
                             <!-- NAME -->
                             <div class="input-field">
                                 <input id="first_name" type="text" class="validate" name="first_name" required>
@@ -948,16 +948,14 @@ to {
                             </div>
                             <!-- SEND BUTTON -->
                             <div class="contact-send">
-                                <button id="submit" name="contactSubmit" type="submit" value="Submit"
-                                        class="btn waves-effect">Send
-                                </button>
+                                <button id="submit" type="submit" value="Send"class="btn waves-effect">Send</button>
                             </div>
                         </form>
                     </div>
                     <!--FORM LOADER-->
-                    <div id="form-loader" class="progress is-hidden">
+                <!--  <div id="form-loader" class="progress is-hidden">
                         <div class="indeterminate"></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
