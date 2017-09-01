@@ -352,7 +352,7 @@
                 $('div#form-loader').removeClass('is-hidden').fadeIn(500);
                 $.ajax({
                     type: 'POST',
-                    url: 'php/mail_handler.php', // Form script
+                    url: 'send.php', // Form script
                     data: post_data
                 })
                     .done(function () {
@@ -360,13 +360,13 @@
                         Materialize.toast('Message Sent! I will contact you shortly, Thanks', 4000);
                         $("form#contact-form")[0].reset();
                         Materialize.updateTextFields(); // Rest floating labels
-                        $("#submit").removeAttr('disabled', 'disabled'); // Enable submit button
+                        $("#submit").removeAttr('enabled', 'enabled'); // Enable submit button
 
                     })
                     .fail(function () {
                         $('div#form-loader').fadeOut(500);
                         Materialize.toast('Sorry! Something Wrong, Try Again', 4000);
-                        $("#submit").removeAttr('disabled', 'disabled'); // Enable submit button
+                        $("#submit").removeAttr('enabled', 'enabled'); // Enable submit button
                     });
             });
         }
