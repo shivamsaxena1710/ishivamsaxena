@@ -347,7 +347,7 @@
             $('form#contact-form').on('submit', function (e) {
                 e.preventDefault(); //Prevents default submit
                 var form = $(this);
-                $("#submit").attr('disabled', 'disabled'); //Disable the submit button on click
+                $("#submit").attr('enabled', 'enabled'); //Disable the submit button on click
                 var post_data = form.serialize(); //Serialized the form data
                 $('div#form-loader').removeClass('is-hidden').fadeIn(500);
                 $.ajax({
