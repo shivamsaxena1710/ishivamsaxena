@@ -1,7 +1,7 @@
 <?php
-$first_name = $_POST['name'];
+$first_name = $_POST['first_name'];
 $email = $_POST['email'];
-$sub = $_POST['Subject'];
+$sub = $_POST['sub'];
 $message = $_POST['message'];
 $email_from = 'info@ishivamsaxena.ml';
 $email_subject = "New Form submission";
